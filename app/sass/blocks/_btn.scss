@@ -1,0 +1,26 @@
+.main-menu__btn {
+    background-color: $white;
+    border: none;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    padding-right: 25px;
+    & span {
+        display: block;
+        width: 18px;
+        height: 2px;
+        background-color: black;
+        position: absolute;
+        &:nth-child(1) {
+            top:0
+        }
+        &:nth-child(2) {
+            top:50%;
+            transform: translateY(-50%);
+        }
+        &:nth-child(3) {
+            bottom: 0;
+        }
+        }
+    }

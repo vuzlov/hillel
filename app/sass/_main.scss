@@ -1,0 +1,103 @@
+
+.image-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 30px;
+    //background-image: url(../img/Team.png);
+    //background-repeat: no-repeat;
+    //background-position: 0 0;
+    //& img {
+    //    width: 375px;
+    //}
+    &__text {
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: 13px;
+        opacity: 80%;
+        color:$white;
+        text-transform: uppercase;
+        padding: 35px 0 35px 0;
+        position: absolute;
+    }
+}
+.team {
+    &-info {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: #000000;
+        &--quality {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+    &-title {
+        font-size: 30px;
+        line-height: 37px;
+        text-Align: Left;
+        background: linear-gradient(90.13deg, $red 0.84%, #EF8080 99.96%);
+        background-clip: text;
+        color: transparent;
+        padding: 30px 0 2px 0;
+    }
+}
+@media screen and (min-width:768px) {
+    .image-box {
+        padding: 31px 0 55px 0;
+        &__text {
+            font-size: 46px;
+            line-height: 56px;
+            letter-spacing: 63px;
+        }
+    }
+    .team {
+        padding: 0 0 30px 0;
+        &-title {
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+    .service-box {
+        padding-right: 30px;
+    }
+
+}
+@media screen and (min-width:992px) {
+    .turn-box {
+        display: flex;
+        padding-bottom: 60px;
+    }
+    .quality-team {
+        display: flex;
+    }
+    .service-box {
+        width: 62%;
+    }
+    .team {
+        width: 62%;
+        padding-right: 30px;
+        &-title {
+            display: flex;
+            justify-content: center;
+            padding: 0 0 0 30px;
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+    .quality-box {
+        width: 50%;
+    }
+    .image-box {
+        &__text {
+            font-size: 86px;
+            line-height: 105px;
+        }
+    }
+}
+
+
+
+

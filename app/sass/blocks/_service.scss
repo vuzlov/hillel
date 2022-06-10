@@ -1,0 +1,30 @@
+.service {
+    &__title {
+
+        font-size:30px;
+        line-height: 37px;
+        background: linear-gradient(90.13deg, $red 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        padding-top: 33px;
+    }
+    &__description {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: #000000;
+        padding-top: 28px;
+    }
+
+}
+@media screen and (min-width:768px) {
+    .service {
+        &__title {
+            font-size: 38px;
+            line-height: 46px;
+            padding-top: 50px;
+        }
+    }
+}

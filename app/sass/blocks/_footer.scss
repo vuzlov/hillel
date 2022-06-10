@@ -1,0 +1,177 @@
+.achievements-list {
+    &__title {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #323264;
+        padding:30px 0;
+        margin-top: 60px;
+    }
+}
+.achievements-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    margin: 0 auto;
+    background-color: $white;
+    width: 255px;
+    height: 90px;
+}
+
+.footer {
+    background: $bg;
+    &-box {
+        padding-top: 0px;
+        border-top: 2px solid $separator;
+        margin-top: 50px;
+    }
+    &-contact {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: min-content min-content ;
+        justify-self: center;
+        &__location {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        &__address {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #323264;
+            padding-top: 30px;
+            position: relative;
+        }
+        &__fb {
+            padding: 21px 0 10px 0;
+        }
+        &__map {
+            text-decoration: none;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: $blue;
+            padding-top: 10px;
+        }
+        &__social {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__phone {
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+            color: #46466E;
+            text-decoration: none;
+            padding-bottom: 10px;
+        }
+        &__mail {
+            font-size: 16px;
+            line-height: 20px;
+            color: $blue;
+            text-decoration: none;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__privicy {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: $text;
+    }
+}
+@media screen and (min-width:768px) {
+    .footer-box {
+        padding-top: 10px;
+    }
+    .footer-contact {
+        &__location {
+            align-items: center;
+            flex-direction: row;
+            padding: 20px 0;
+        }
+        &__address {
+            padding-top: 0;
+        }
+        &__address::after {
+            content: '';
+            background-image: url('../img/Dot-f.png') ;
+            width:6px;
+            height:6px;
+            position: absolute;
+            top: 6px;
+            right: -15px;
+        }
+        &__fb {
+            padding: 0 0 0 0;
+        }
+        &__map {
+            padding-left: 26px;
+            padding-top: 0;
+        }
+        &__social {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 30px;
+        }
+        &__phone {
+            position: relative;
+            padding: 0 26px;
+        }
+        &__phone::after{
+            content: '';
+            background-image: url('../img/Dot-f.png') ;
+            width:6px;
+            height:6px;
+            position: absolute;
+            top: 6px;
+            right: 10px;
+        }
+        &__phone::before{
+            content: '';
+            background-image: url('../img/Dot-f.png') ;
+            width:6px;
+            height:6px;
+            position: absolute;
+            top: 6px;
+            left: 10px;
+        }
+        &__mail {
+            padding-bottom: 0;
+        }
+    }
+}
+@media screen and (min-width:992px) {
+    .achievements-images {
+        width: 132px;
+        padding: 25px 13px;
+    }
+    .footer {
+        &-box {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 0;
+        }
+        &-contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            &__social {
+                padding: 30px 0 0 0;
+            }
+            &__location {
+                padding: 0;
+            }
+        }
+    }
+}

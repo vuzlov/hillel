@@ -1,0 +1,28 @@
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    padding:0;
+    margin: 0;
+    list-style: none;
+}
+.slider-dots li {
+    margin: 0 7.5px;
+}
+.slider-dots button {
+    font-size: 0;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(36,163,255,0.2);
+    &:hover {
+        background: rgba(36,163,255,0.6);
+    }
+    & .slick-active button {
+        background: rgba(36,163,255,1);
+    }
+}
+
+
+
